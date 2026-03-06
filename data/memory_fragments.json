@@ -1,0 +1,20 @@
+{
+  "memory_fragments": [
+    {"content": "A childhood birthday party where everyone sang your name", "emotional_weight": 8, "clarity": 0.9},
+    {"content": "The last conversation with someone you'll never see again", "emotional_weight": 10, "clarity": 0.7},
+    {"content": "Walking home in the rain without an umbrella, feeling completely free", "emotional_weight": 6, "clarity": 0.8},
+    {"content": "The smell of your grandmother's kitchen during holidays", "emotional_weight": 7, "clarity": 1.0},
+    {"content": "A moment of pure terror in a place that should have been safe", "emotional_weight": 9, "clarity": 0.6},
+    {"content": "Laughing until your stomach hurt with friends you've lost touch with", "emotional_weight": 8, "clarity": 0.9},
+    {"content": "The exact moment you realized childhood was ending", "emotional_weight": 9, "clarity": 0.5},
+    {"content": "A song that played during your first kiss", "emotional_weight": 7, "clarity": 0.8},
+    {"content": "Standing in an empty house for the last time", "emotional_weight": 10, "clarity": 0.9},
+    {"content": "The weight of a secret you've never told anyone", "emotional_weight": 8, "clarity": 1.0},
+    {"content": "Running through sprinklers on a summer afternoon", "emotional_weight": 5, "clarity": 0.9},
+    {"content": "The sound of footsteps following you in the dark", "emotional_weight": 9, "clarity": 0.7},
+    {"content": "A dream so vivid you thought it was real for years", "emotional_weight": 6, "clarity": 0.4},
+    {"content": "The moment you first understood what loneliness meant", "emotional_weight": 9, "clarity": 0.8},
+    {"content": "Building sandcastles that the tide would inevitably wash away", "emotional_weight": 4, "clarity": 0.9}
+  ]
+}
+

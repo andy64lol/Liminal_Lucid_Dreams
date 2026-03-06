@@ -1,0 +1,30 @@
+{
+  "world_bounds": {
+    "x_min": -100,
+    "x_max": 100,
+    "y_min": -100,
+    "y_max": 100,
+    "z_min": -10,
+    "z_max": 10
+  },
+  "save_settings": {
+    "save_dir": "saves",
+    "max_slots": 5
+  },
+  "player_stats": {
+    "sanity_max": 100,
+    "reality_max": 100,
+    "memory_max": 100
+  },
+  "gameplay": {
+    "min_heaven_door_distance": 10,
+    "entity_spawn_chance": 0.15,
+    "anomaly_chance": 0.25,
+    "temporal_distortion_chance": 0.10,
+    "memory_fragment_chance": 0.20,
+    "dimensional_rift_chance": 0.08,
+    "echo_event_chance": 0.15,
+    "phantom_interaction_chance": 0.12
+  }
+}
+

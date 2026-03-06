@@ -1,0 +1,152 @@
+{
+  "liminal_entities": {
+    "the_follower": {
+      "name": "The Follower",
+      "description": "A shadowy figure that appears in your peripheral vision, always maintaining the same distance.",
+      "behavior": "follows_player",
+      "threat_level": 2
+    },
+    "memory_echo": {
+      "name": "Memory Echo",
+      "description": "A translucent figure performing actions from your past, unaware of your presence.",
+      "behavior": "replays_memories",
+      "threat_level": 1
+    },
+    "void_walker": {
+      "name": "Void Walker",
+      "description": "A humanoid silhouette that phases through walls, leaving reality distortions in its wake.",
+      "behavior": "reality_distortion",
+      "threat_level": 3
+    },
+    "the_observer": {
+      "name": "The Observer",
+      "description": "An presence that watches from impossible angles, its gaze felt but never seen.",
+      "behavior": "constant_surveillance",
+      "threat_level": 2
+    },
+    "time_wraith": {
+      "name": "Time Wraith",
+      "description": "A being that exists between moments, causing temporal anomalies wherever it goes.",
+      "behavior": "temporal_manipulation",
+      "threat_level": 4
+    },
+    "mirror_self": {
+      "name": "Mirror Self",
+      "description": "An exact copy of yourself that appears in reflective surfaces, acting independently.",
+      "behavior": "mimics_player",
+      "threat_level": 3
+    },
+    "the_janitor": {
+      "name": "The Janitor",
+      "description": "An elderly figure eternally cleaning spaces that never get dirty, humming forgotten melodies.",
+      "behavior": "environmental_maintenance",
+      "threat_level": 1
+    },
+    "static_person": {
+      "name": "Static Person",
+      "description": "A human-shaped mass of television static that occasionally takes familiar forms.",
+      "behavior": "shape_shifting",
+      "threat_level": 2
+    },
+    "fragment_collector": {
+      "name": "Fragment Collector",
+      "description": "A being made of scattered memories that seeks to gather lost fragments of consciousness.",
+      "behavior": "memory_absorption",
+      "threat_level": 2
+    },
+    "dimensional_guardian": {
+      "name": "Dimensional Guardian",
+      "description": "An ethereal entity that protects rifts between worlds, challenging those who seek passage.",
+      "behavior": "rift_protection",
+      "threat_level": 3
+    },
+    "echo_phantom": {
+      "name": "Echo Phantom",
+      "description": "A remnant of past events that replays traumatic moments in endless loops.",
+      "behavior": "event_repetition",
+      "threat_level": 2
+    },
+    "memory_thief": {
+      "name": "Memory Thief",
+      "description": "A shadowy figure that steals precious memories and leaves gaps in consciousness.",
+      "behavior": "memory_theft",
+      "threat_level": 4
+    },
+    "temporal_anchor": {
+      "name": "Temporal Anchor",
+      "description": "A being that exists outside time, offering glimpses of past and future to lost souls.",
+      "behavior": "time_revelation",
+      "threat_level": 1
+    }
+  },
+  "nightmare_entities": {
+    "hospital": [
+      {"name": "Shadowy Doctor", "speed": 0.5, "friendly": false, "theme": "hospital"},
+      {"name": "Ghostly Patient", "speed": 0.3, "friendly": true, "theme": "hospital"},
+      {"name": "Blood Seeker", "speed": 0.6, "friendly": false, "theme": "hospital"},
+      {"name": "Orderly", "speed": 0.4, "friendly": false, "theme": "hospital"},
+      {"name": "Nurse", "speed": 0.5, "friendly": false, "theme": "hospital"},
+      {"name": "The surgeon", "speed": 0.4, "friendly": false, "theme": "hospital"},
+      {"name": "The girl of that toilet stall", "speed": 0.3, "friendly": false, "theme": "hospital"}
+    ],
+    "school": [
+      {"name": "Phantom Teacher", "speed": 0.4, "friendly": false, "theme": "school"},
+      {"name": "Lost Student", "speed": 0.3, "friendly": true, "theme": "school"},
+      {"name": "The bully", "speed": 0.5, "friendly": false, "theme": "school"},
+      {"name": "Teacher's Assistant", "speed": 0.5, "friendly": false, "theme": "school"},
+      {"name": "Hall Monitor", "speed": 0.5, "friendly": false, "theme": "school"},
+      {"name": "Cafeteria Ghost", "speed": 0.4, "friendly": false, "theme": "school"},
+      {"name": "The Librarian", "speed": 0.3, "friendly": true, "theme": "school"},
+      {"name": "Detention Spirit", "speed": 0.6, "friendly": false, "theme": "school"}
+    ],
+    "home": [
+      {"name": "Shadow Mother", "speed": 0.4, "friendly": false, "theme": "home"},
+      {"name": "Child Spirit", "speed": 0.3, "friendly": true, "theme": "home"},
+      {"name": "Basement Dweller", "speed": 0.5, "friendly": false, "theme": "home"},
+      {"name": "Attic Crawler", "speed": 0.6, "friendly": false, "theme": "home"},
+      {"name": "Sister", "speed": 0.4, "friendly": false, "theme": "home"},
+      {"name": "Brother", "speed": 0.3, "friendly": false, "theme": "home"},
+      {"name": "Father", "speed": 0.5, "friendly": false, "theme": "home"},
+      {"name": "Mother", "speed": 0.6, "friendly": false, "theme": "home"},
+      {"name": "Grandmother", "speed": 0.2, "friendly": true, "theme": "home"},
+      {"name": "Grandfather", "speed": 0.2, "friendly": true, "theme": "home"},
+      {"name": "The good dog", "speed": 0.4, "friendly": false, "theme": "home"},
+      {"name": "The stray cat", "speed": 0.3, "friendly": true, "theme": "home"}
+    ],
+    "limbo": [
+      {"name": "Shadow Walker", "speed": 0.4, "friendly": false, "theme": "limbo"},
+      {"name": "Mind Eater", "speed": 0.6, "friendly": false, "theme": "limbo"},
+      {"name": "Lost Soul", "speed": 0.3, "friendly": true, "theme": "limbo"},
+      {"name": "Void Stalker", "speed": 0.5, "friendly": false, "theme": "limbo"},
+      {"name": "The angel", "speed": 0.4, "friendly": false, "theme": "limbo"},
+      {"name": "The demon", "speed": 0.5, "friendly": false, "theme": "limbo"},
+      {"name": "The shadow", "speed": 0.3, "friendly": false, "theme": "limbo"},
+      {"name": "The watcher", "speed": 0.6, "friendly": false, "theme": "limbo"},
+      {"name": "Your friend", "speed": 0.4, "friendly": true, "theme": "limbo"},
+      {"name": "Your worst dream", "speed": 0.5, "friendly": false, "theme": "limbo"}
+    ],
+    "mall": [
+      {"name": "Mannequin", "speed": 0.4, "friendly": false, "theme": "mall"},
+      {"name": "Distorted shopping machine", "speed": 0.5, "friendly": false, "theme": "mall"},
+      {"name": "Lost Weird Shopper", "speed": 0.3, "friendly": false, "theme": "mall"},
+      {"name": "Security Patrol", "speed": 0.5, "friendly": false, "theme": "mall"},
+      {"name": "Faceless Clerk", "speed": 0.6, "friendly": false, "theme": "mall"},
+      {"name": "Faceless Security Guard", "speed": 0.4, "friendly": false, "theme": "mall"}
+    ],
+    "Train_station": [
+      {"name": "Train conductor", "speed": 0.4, "friendly": false, "theme": "Train_station"},
+      {"name": "Crawling Woman", "speed": 0.9, "friendly": false, "theme": "Train_station"},
+      {"name": "Undead corpses", "speed": 0.5, "friendly": false, "theme": "Train_station"},
+      {"name": "The train", "speed": 10.5, "friendly": false, "theme": "Train_station"}
+    ],
+    "Abandoned_amusement_park": [
+      {"name": "The clown", "speed": 0.4, "friendly": false, "theme": "Abandoned_amusement_park"},
+      {"name": "The clown with a knife", "speed": 0.5, "friendly": false, "theme": "Abandoned_amusement_park"},
+      {"name": "The clown with a chainsaw", "speed": 0.6, "friendly": false, "theme": "Abandoned_amusement_park"},
+      {"name": "The Mickey Mouse", "speed": 0.4, "friendly": false, "theme": "Abandoned_amusement_park"},
+      {"name": "The Donald Duck", "speed": 0.5, "friendly": false, "theme": "Abandoned_amusement_park"},
+      {"name": "The Goofy", "speed": 0.6, "friendly": false, "theme": "Abandoned_amusement_park"}
+    ]
+  }
+}
+

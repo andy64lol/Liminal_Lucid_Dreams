@@ -1,0 +1,319 @@
+{
+  "themes": [
+    "hospital", "school", "home", "limbo", "mall", "Train_station", "Abandoned_amusement_park",
+    "office", "hotel", "airport", "parking_garage", "subway", "swimming_pool", "warehouse",
+    "casino", "theater", "library", "cathedral", "laboratory", "museum", "arcade",
+    "gas_station", "laundromat", "diner", "gym", "shopping_center", "train_station",
+    "nursing_home", "daycare", "internet_cafe", "bowling_alley", "motel", "auto_shop",
+    "cemetery", "greenhouse", "radio_station", "dental_office", "waiting_room",
+    "elevator_shaft", "stairwell"
+  ],
+  "theme_weights": {
+    "early": [5, 1, 5, 1, 2, 1, 1],
+    "mid": [3, 4, 3, 2, 4, 2, 2],
+    "high": [2, 3, 2, 5, 3, 2, 2],
+    "very_high": [1, 2, 1, 10, 1, 2, 3]
+  },
+  "theme_colors": {
+    "hospital": "CYAN",
+    "school": "YELLOW",
+    "home": "GREEN",
+    "limbo": "MAGENTA",
+    "mall": "BLUE"
+  },
+  "rooms": {
+    "hospital": {
+      "descriptions": [
+        ["A sterile hospital room where IV drips count down to unknown procedures, medical charts flutter without wind.", ["door1", "door2"]],
+        ["A blood-stained operating theater where surgical lights swing hypnotically, casting dancing shadows on abandoned instruments.", ["door1", "door2"]],
+        ["A doctor's office where patient files rewrite themselves, diagnoses changing to match your deepest fears.", ["door1", "door3"]],
+        ["An endless hospital corridor where wheelchair tracks lead in circles, the sound of distant breathing echoes from closed rooms.", ["door1", "door2", "door3"]],
+        ["A reception area where appointment books schedule meetings with the deceased, phones ring with no callers.", ["door1", "door4"]],
+        ["A trauma bay where heart monitors flatline rhythmically, creating a haunting electronic symphony of death.", ["door2", "door3"]],
+        ["A pediatric ward where toy blocks spell out final words, teddy bears stare with knowing glass eyes.", ["door1", "door2"]],
+        ["An MRI chamber that scans for souls instead of bones, revealing the fractures in your spirit.", ["door1", "door3"]],
+        ["A morgue where toe tags write themselves, listing deaths that haven't happened yet.", ["door2", "door4"]],
+        ["A psychiatric ward where padded walls absorb screams from other timelines, medication cups refill with liquid memories.", ["door1", "door2", "door3"]]
+      ],
+      "features": [
+        "There's an emergency stairwell leading up.",
+        "A service elevator shaft descends into darkness.",
+        "Both the patient and staff stairwells are accessible.",
+        "No exit signs can be seen.",
+        "A worn hospital staircase winds upwards.",
+        "A broken hospital gurney blocks the stairs."
+      ],
+      "paths": [
+        "Hospital corridors extend in all directions.",
+        "Only the patient wing and administration area are accessible.",
+        "Left leads to radiology, right to the ICU.",
+        "A single hallway continues forward.",
+        "A narrow service passage leads left.",
+        "A wide main corridor stretches ahead."
+      ],
+      "interactables": [
+        ["A patient's chart hangs on the wall.", "The chart has your name on it..."],
+        ["A medical monitor flickers with vitals.", "The heartbeat matches your own exactly..."],
+        ["A wheelchair sits empty in the corner.", "It slowly begins to move on its own..."],
+        ["A bottle of medication sits on the counter.", "The prescription is made out to you..."],
+        ["An IV drip stands beside an empty bed.", "The fluid in the bag turns red as you watch..."],
+        ["A surgical mask lies discarded on the floor.", "It smells of antiseptic and something else..."],
+        ["A set of X-rays are clipped to a lightboard.", "They show a skull with something inside it..."],
+        null
+      ]
+    },
+    "school": {
+      "descriptions": [
+        ["A classroom where chalk writes equations that solve themselves, desks arranged for students who graduated decades ago but never left.", ["door1", "door4"]],
+        ["A gymnasium where sneakers squeak on phantom feet, scoreboards count games that span lifetimes, basketballs dribble in perfect rhythm with your heartbeat.", ["door1", "door3"]],
+        ["A science lab where beakers bubble with liquid nostalgia, periodic tables rearrange to spell forgotten names, microscopes reveal memories instead of cells.", ["door2", "door3"]],
+        ["A cafeteria where lunch trays slide across tables by themselves, milk cartons display missing children from tomorrow's newspapers.", ["door1", "door2"]],
+        ["A detention hall where the clock moves backwards, student desks are carved with confessions that change when you look away.", ["door1"]],
+        ["A music room where phantom orchestras perform graduation songs for classes that never were, sheet music writes itself in real-time.", ["door1", "door2", "door3"]],
+        ["A locker hallway where combination locks spin to birth dates of the unborn, yearbook photos age in real-time within their frames.", ["door1", "door4"]],
+        ["A principal's office where disciplinary files document future infractions, the intercom announces names of students who haven't enrolled yet.", ["door2"]],
+        ["A library where books rewrite their endings based on who's reading, the card catalog sorts itself by emotional weight rather than alphabet.", ["door1", "door3", "door4"]],
+        ["An abandoned prom hall where decorations sway to music only the dead can hear, corsages wilt and bloom in endless cycles.", ["door2", "door3"]]
+      ],
+      "features": [
+        "There's a staircase to the upper floor classrooms.",
+        "A dark stairwell leads to the basement level.",
+        "Both main and emergency staircases are visible.",
+        "No fire exit signs can be seen.",
+        "A spiral staircase leads to the library tower.",
+        "Blocked stairs with 'Do Not Enter' tape lead nowhere."
+      ],
+      "paths": [
+        "School hallways extend in all directions.",
+        "Only forward to the gym and backward to the entrance are clear.",
+        "Left corridor leads to classrooms, right to administration.",
+        "A single hallway continues forward.",
+        "A narrow pathway leads left to the library.",
+        "A wide main hall stretches ahead."
+      ],
+      "interactables": [
+        ["An old yearbook lies open on a desk.", "Your photo is on every page, getting older..."],
+        ["A chalkboard covered in equations.", "The math solves a problem about your life..."],
+        ["A school trophy cabinet.", "Your name appears and disappears on the plaques..."],
+        ["A student's backpack left behind.", "It contains homework with your handwriting..."],
+        ["A test paper on the teacher's desk.", "Every answer is written in blood..."],
+        ["A detention slip with your name on it.", "It details a crime you don't remember committing..."],
+        ["A row of lockers.", "One has your name on it with scratches around the lock..."],
+        ["A note pinned to the wall.", "It reads 'You will never escape from us,nerd'..."],
+        ["A broken clock on the wall.", "It ticks make you remember of something urgent you needed to do..."],
+        ["A row of student lockers.", "One has your name on it with scratches around the lock..."],
+        null
+      ]
+    },
+    "home": {
+      "descriptions": [
+        ["A child's bedroom where stuffed animals whisper bedtime stories from lives unlived, music boxes play lullabies that predict nightmares.", ["door1"]],
+        ["An attic where photo albums chronicle a family that grows older in reverse, Christmas decorations hang themselves with seasonal precision.", ["door1", "door4"]],
+        ["A living room where the TV broadcasts home movies of your future, remote controls channel-surf through parallel lives.", ["door1", "door2", "door3"]],
+        ["A bathroom where the mirror shows you aging in fast-forward, toothbrushes arrange themselves by the dates of their owners' deaths.", ["door1"]],
+        ["A kitchen where the refrigerator preserves memories instead of food, recipe cards write themselves with ingredients from your past.", ["door1", "door2"]],
+        ["A dining room set for a last supper that never ends, chairs pull themselves out when phantom guests arrive for dinner.", ["door1", "door3", "door4"]],
+        ["A basement where the walls bleed condensation shaped like unspoken confessions, storage boxes organize themselves by emotional trauma.", ["door1", "door2"]],
+        ["A study where books rewrite themselves as you read, the words shifting to reveal the reader's deepest regrets.", ["door2", "door3"]],
+        ["A nursery that prepares itself for children who will never be born, cribs rock empty in rhythm with unborn heartbeats.", ["door1", "door4"]],
+        ["A master bedroom where the bed makes itself with sheets from different timelines, alarm clocks count down to moments of impact.", ["door2", "door3"]]
+      ],
+      "features": [
+        "There's a carpeted staircase leading to the upper floor.",
+        "A cellar door opens to stairs descending below.",
+        "Both the main stairs and a ladder to the attic are visible.",
+        "No way up or down from this floor.",
+        "A vintage spiral staircase winds to the upper level.",
+        "Half-collapsed stairs lead to nowhere safe."
+      ],
+      "paths": [
+        "Doorways lead to other rooms in all directions.",
+        "Only forward to the living room and backward to the foyer are clear.",
+        "Left door leads to the kitchen, right to the bedroom.",
+        "A single doorway continues forward.",
+        "A narrow passage leads left to the pantry.",
+        "A wide entryway opens ahead."
+      ],
+      "interactables": [
+        ["An old TV flickers with static.", "The TV shows glimpses of your past..."],
+        ["A rusty music box sits on a table.", "The melody brings tears to your eyes..."],
+        ["A dusty photo album lies open.", "The photos show memories you'd forgotten..."],
+        ["A home movie plays on a projector.", "You're in the film but don't remember it being taken..."],
+        ["A child's drawing is pinned to the refrigerator.", "It depicts a dark figure standing behind a family..."],
+        ["A landline phone that begins to ring.", "When you answer, you hear your own voice..."],
+        ["A broken clock on the wall.", "It ticks makes you remember of █████████████,and ████████████████..."],
+        null
+      ]
+    },
+    "limbo": {
+      "descriptions": [
+        ["A mirrored labyrinth where each reflection shows a different choice you could have made, fractal infinities of unlived lives stretching beyond comprehension.", ["door1", "door2", "door3"]],
+        ["A crystalline cavern where each ice formation preserves a moment of pure emotion, the temperature drops as regret accumulates.", ["door1", "door3"]],
+        ["A gallery of photographs that shift between your memories and someone else's, the frames breathing like living tissue.", ["door2"]],
+        ["An infinite void where fragments of consciousness float like islands, each piece containing the last thoughts of the forgotten.", ["door1", "door2", "door3", "door4"]],
+        ["A gravity-defying chamber where tears fall upward and laughter sinks like stones, the laws of physics bending to emotional weight.", ["door1", "door4"]],
+        ["An impossible forest that grows indoors, each tree bearing fruit that tastes like childhood summers you never experienced.", ["door2", "door3"]],
+        ["A temporal anomaly room where seconds rewind like film strips, showing the same moment of impact played backwards endlessly.", ["door1", "door3"]],
+        ["A consciousness chamber where thoughts become visible as smoke, unspoken words hanging in the air like accusations.", ["door1", "door2", "door4"]],
+        ["A library of unwritten books where empty pages fill themselves with stories of lives that could have been.", ["door1", "door2", "door3", "door4"]],
+        ["A waiting room for the afterlife where appointment numbers are called in languages that predate human speech.", ["door2", "door3"]]
+      ],
+      "features": [
+        "There's a floating staircase suspended in midair.",
+        "A dark pit seems to lead downward forever.",
+        "Staircases spiral both upward and downward impossibly.",
+        "No conventional paths up or down exist here.",
+        "A spiral of light seems to lead upwards.",
+        "Broken fragments of stairs hang in the air."
+      ],
+      "paths": [
+        "Impossible pathways extend in all directions.",
+        "Only forward and backward seem to lead somewhere tangible.",
+        "Left leads to darkness, right to blinding light.",
+        "A single shimmering path continues forward.",
+        "A narrow thread of reality twists to the left.",
+        "A wide avenue of memories stretches ahead."
+      ],
+      "interactables": [
+        ["A mirror reflects a different room.", "Your reflection seems wrong somehow..."],
+        ["A broken clock ticks erratically.", "Time seems distorted here..."],
+        ["A locked chest sits in the corner.", "It hums with mysterious energy..."],
+        ["A faded painting depicts a forgotten landscape.", "The scene shifts as you watch..."],
+        ["A floating orb of swirling memories.", "You see faces you've never met yet recognize..."],
+        ["A door standing alone without walls.", "Through the keyhole, you see yourself sleeping..."],
+        ["A strange artifact that pulses with light.", "It seems to respond to your thoughts..."],
+        ["A wall of photos and memories.", "They feel like your own but are not..."],
+        ["A door that leads to nowhere.", "It opens to a void that whispers your name...you better not cross it..."],
+        ["A floating object that seems to be a mirror.", "It shows you a different version of yourself..."],
+        ["A phone opened with distorted text you can't recognise...", "It seems to be a post in social media about you..."],
+        null
+      ]
+    },
+    "mall": {
+      "descriptions": [
+        ["An endless corridor with doors that seem to breathe.", ["door1", "door2", "door3", "door4"]],
+        ["An overgrown indoor garden where plants whisper secrets.", ["door1", "door3"]],
+        ["A library where books write themselves.", ["door1", "door2", "door4"]],
+        ["A food court where meals appear and disappear on their own.", ["door1", "door2"]],
+        ["A clothing store with mannequins that change position.", ["door1", "door3", "door4"]],
+        ["A toy store where the toys observe you carefully.", ["door2", "door3"]],
+        ["An electronics store with screens showing your past.", ["door1", "door4"]],
+        ["A cinema playing movies of your life you don't remember.", ["door1", "door2"]]
+      ],
+      "features": [
+        "There's an escalator leading to the upper level.",
+        "A down escalator leads to the lower concourse.",
+        "Both up and down escalators are operational.",
+        "No directory signs indicate other levels.",
+        "A decorative spiral staircase leads to a mezzanine.",
+        "The mall map shows stairs that aren't there."
+      ],
+      "paths": [
+        "Shopping concourses extend in all directions.",
+        "Only the main concourse and entrance are clear.",
+        "Left leads to the department store, right to boutiques.",
+        "A single walkway continues forward.",
+        "A hallway that bends into impossible angles",
+        "A narrow service corridor twists to the left.",
+        "A wide shopping promenade stretches ahead.",
+        "A restaurant area with large restaurants that you feel like you've eaten here before.",
+        "A food court with a strange smell that makes you feel sick.",
+        "A mall with a strange clock that seems to be broken and counting randomly."
+      ],
+      "interactables": [
+        ["A store mannequin in an unusual pose.", "Its head turns slightly to watch you..."],
+        ["A mall directory with a 'You Are Here' marker.", "The marker moves when you look away..."],
+        ["A food court tray with a half-eaten meal.", "Steam still rises from it as if just abandoned..."],
+        ["A store security camera.", "It follows your movement too precisely..."],
+        ["A bright sale sign flashing discounts.", "The text briefly changes to personal messages for you..."],
+        ["A vending machine with strange products.", "Items inside have your face on the packaging..."],
+        ["A shopping cart that rolls away on its own.", "It seems to be leading you somewhere..."],
+        null
+      ]
+    },
+    "Train_station": {
+      "descriptions": [
+        ["A train station with trains that never arrive.", ["door1", "door2"]],
+        ["A platform where the echoes of footsteps linger.", ["door1", "door3"]],
+        ["A waiting room with chairs that shift positions.", ["door1", "door4"]],
+        ["A ticket booth that dispenses tickets to nowhere.", ["door1", "door2"]],
+        ["An empty train car that feels like a memory.", ["door1", "door3"]],
+        ["A control room with screens showing distorted images.", ["door2", "door4"]],
+        ["A maintenance area filled with tools that hum softly.", ["door1", "door2"]],
+        ["An underground tunnel that seems to stretch forever.", ["door1", "door3"]],
+        ["A underground railway where blood is spilled everywhere and the faces of the corpses distorts", ["door1", "door2"]]
+      ],
+      "features": [
+        "There's a staircase leading to the platform above.",
+        "A dark stairwell leads to the underground tracks.",
+        "Both main and emergency staircases are visible.",
+        "No fire exit signs can be seen.",
+        "A spiral staircase leads to the observation deck.",
+        "Blocked stairs with 'Do Not Enter' tape lead nowhere.",
+        "A staircase in the middle of the railways",
+        "A station with weird paintings of people you knew,but their faces seem very distorted..."
+      ],
+      "paths": [
+        "Train platforms extend in all directions.",
+        "Only the main platform and entrance are clear.",
+        "Left leads to the ticket booth, right to the waiting area.",
+        "A single walkway continues forward.",
+        "A narrow service corridor twists to the left.",
+        "A wide platform stretches ahead.",
+        "A train floting while colisioning against the wall.",
+        "A hallway that seems like a the insides of a train car.",
+        "A train station with a weird clock that seems to be broken and counting randomly."
+      ],
+      "interactables": [
+        ["A train schedule board with your name.", "The next train is always 'now'..."],
+        ["A ticket machine that dispenses blank tickets.", "The tickets show places you've never been..."],
+        ["A waiting bench with a strange inscription.", "It reads 'You will never leave'..."],
+        ["A train conductor's hat left behind.", "It feels warm as if someone just wore it..."],
+        ["A train car filled with fog.", "You hear whispers of your name inside..."],
+        ["A station clock that ticks backward.", "Time seems to unravel around it..."],
+        ["A corpse with blood in the middle of the rails", "The face seems distorted but yet familiar..."],
+        null
+      ]
+    },
+    "Abandoned_amusement_park": {
+      "descriptions": [
+        ["An abandoned roller coaster with a broken track.", ["door1", "door2"]],
+        ["A funhouse with mirrors that show distorted reflections.", ["door1", "door3"]],
+        ["A carnival game booth with prizes that seem to watch you.", ["door1", "door4"]],
+        ["A Ferris wheel that creaks ominously with doors in the middle of the sky leading to nowhere.", ["door1", "door2", "door3", "door4"]],
+        ["A clown's tent filled with laughter that echoes eerily.", ["door1", "door3"]],
+        ["A food stand with food made up of human parts that seems to move on its own...", ["door2", "door4"]]
+      ],
+      "features": [
+        "A staircase leading to the top of the fun house",
+        "A dark stairwell leading to nowhere.",
+        "Both main and emergency staircases are visible and they collide into one,bending at impossible angles you've never seen...",
+        "No fire exit signs can be seen near an emergency door of the park,which leads to a wall...",
+        "A spiral staircase leads to the pirate ship.",
+        "Blocked stairs with 'Only authorised personel' tape that lead nowhere but a wall.",
+        "A staircase in the middle of the seats of the circus that doesn't make sense...",
+        "A mirror maze with refelections of people you knew,but their faces seem very distorted..."
+      ],
+      "paths": [
+        "A deserted fun ride that seems infinite",
+        "A circus with a fake clown that seems to be real",
+        "A roller coaster that seems to be broken",
+        "A hallway from a fun house",
+        "Platforms of the park that seem to be floating forming a path",
+        "Distorted bathroom hallway that seems to have infinite stalls",
+        "A food court with a familiar yet decilious smell of fast food brands that never existed"
+      ],
+      "interactables": [
+        ["A broken ride with a strange inscription.", "It reads 'You will never leave'..."],
+        ["A clown's mask left behind.", "It seems to be watching you..."],
+        ["A ticket booth with a strange inscription.", "It reads 'You will never leave'..."],
+        ["A funhouse mirror that distorts your reflection.", "You see a version of yourself that isn't you..."],
+        ["A carousel with horses that seem to move on their own.", "They look like people you know..."],
+        ["A Ferris wheel that creaks ominously.", "The view from the top shows a different world..."],
+        ["A toy clown with a distorted face", "It seems to be watching you..."],
+        null
+      ]
+    }
+  }
+}
+

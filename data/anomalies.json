@@ -1,0 +1,81 @@
+{
+  "anomalies": {
+    "temporal_loop": {
+      "name": "Temporal Loop",
+      "description": "Time begins to repeat in 3-minute cycles, with subtle changes each iteration.",
+      "effect": "time_loop"
+    },
+    "gravity_shift": {
+      "name": "Gravity Anomaly",
+      "description": "Gravity becomes inconsistent, with objects and furniture floating or stuck to walls.",
+      "effect": "physics_distortion"
+    },
+    "memory_bleed": {
+      "name": "Memory Bleed",
+      "description": "Memories from different times and places begin manifesting as physical objects.",
+      "effect": "memory_manifestation"
+    },
+    "reality_tear": {
+      "name": "Reality Tear",
+      "description": "A visible crack in space reveals glimpses of other dimensions or timelines.",
+      "effect": "dimensional_breach"
+    },
+    "echo_chamber": {
+      "name": "Echo Chamber",
+      "description": "Sounds from the past and future overlap with the present, creating an auditory chaos.",
+      "effect": "temporal_audio"
+    },
+    "shadow_displacement": {
+      "name": "Shadow Displacement",
+      "description": "Shadows move independently of their sources, sometimes revealing hidden truths.",
+      "effect": "shadow_manipulation"
+    }
+  },
+  "dimensional_rifts": {
+    "memory_vault": {
+      "destination_type": "A space where lost memories float like golden orbs",
+      "stability": 0.8
+    },
+    "shadow_realm": {
+      "destination_type": "A dark mirror of reality where fears take physical form",
+      "stability": 0.3
+    },
+    "temporal_nexus": {
+      "destination_type": "A junction point where all timelines converge",
+      "stability": 0.5
+    },
+    "emotional_landscape": {
+      "destination_type": "A world shaped by pure emotion and feeling",
+      "stability": 0.6
+    },
+    "forgotten_archive": {
+      "destination_type": "A library containing every thought never spoken",
+      "stability": 0.7
+    },
+    "parallel_self": {
+      "destination_type": "A place where you can meet versions of yourself from other choices",
+      "stability": 0.4
+    },
+    "childhood_echo": {
+      "destination_type": "A recreation of your childhood home, but wrong in subtle ways",
+      "stability": 0.6
+    },
+    "final_moment": {
+      "destination_type": "The last second before everything changed forever",
+      "stability": 0.2
+    }
+  },
+  "echo_events": [
+    {"event_type": "phantom_phone_call", "intensity": 3, "duration": 2},
+    {"event_type": "distant_laughter", "intensity": 2, "duration": 1},
+    {"event_type": "footsteps_overhead", "intensity": 4, "duration": 3},
+    {"event_type": "music_box_melody", "intensity": 3, "duration": 2},
+    {"event_type": "crying_child", "intensity": 5, "duration": 1},
+    {"event_type": "door_slamming", "intensity": 4, "duration": 1},
+    {"event_type": "whispered_name", "intensity": 5, "duration": 2},
+    {"event_type": "breaking_glass", "intensity": 4, "duration": 1},
+    {"event_type": "familiar_voice", "intensity": 3, "duration": 3},
+    {"event_type": "typing_sounds", "intensity": 2, "duration": 2}
+  ]
+}
+
