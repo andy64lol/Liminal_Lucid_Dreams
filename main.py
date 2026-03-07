@@ -28,7 +28,7 @@ gameplay = data_loader.get_gameplay_settings()
 MIN_HEAVEN_DOOR_DISTANCE = gameplay['min_heaven_door_distance']
 ENTITY_SPAWN_CHANCE = gameplay['entity_spawn_chance']
 ANOMALY_CHANCE = gameplay['anomaly_chance']
-TEMPORAL_DISTORTION_CHANCE = gameplay['temporal_distortion_chance']
+TEMPORAL_DISTORTION_CHANCE = gameplay['temporal_distort']
 MEMORY_FRAGMENT_CHANCE = gameplay['memory_fragment_chance']
 DIMENSIONAL_RIFT_CHANCE = gameplay['dimensional_rift_chance']
 ECHO_EVENT_CHANCE = gameplay['echo_event_chance']
@@ -392,7 +392,6 @@ class Player:
         self.psychological_state = "stable"
         self.last_entity_encounter = None
         self.active_effects = []
-
     def update_psychological_state(self):
         """Update psychological state based on various metrics"""
         if self.sanity < 20:
@@ -569,7 +568,9 @@ class Game:
             choice = input("\nEnter your choice (0-3): ").strip()
 
             if choice == "0":
-                print(colours.YELLOW + "\nThank you for playing Liminal. Goodbye!" + colours.RESET_ALL)
+                print(colours.YELLOW + "\nThank you for playing Liminal: Lucid Dreams. Goodbye!" + colours.RESET_ALL)
+                time.sleep(1)
+                os.system('cls' if os.name == 'nt' else 'clear')
                 sys.exit(0)
             elif choice == "1":
                 self.game_mode = "nightmare"
@@ -602,6 +603,7 @@ class Game:
                 self.show_menu()
                 return
         except (EOFError, KeyboardInterrupt):
+            os.system('cls' if os.name == 'nt' else 'clear')
             print(colours.RED + "\nInput interrupted. Exiting game." + colours.RESET_ALL)
             sys.exit(0)
 

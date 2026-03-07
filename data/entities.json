@@ -72,11 +72,71 @@
       "behavior": "memory_theft",
       "threat_level": 4
     },
-    "temporal_anchor": {
+"temporal_anchor": {
       "name": "Temporal Anchor",
       "description": "A being that exists outside time, offering glimpses of past and future to lost souls.",
       "behavior": "time_revelation",
       "threat_level": 1
+    },
+    "the_whisperer": {
+      "name": "The Whisperer",
+      "description": "A being that speaks in forgotten languages, its words threading through your dreams like poison.",
+      "behavior": "psychic_messaging",
+      "threat_level": 3
+    },
+    "dream_weavers": {
+      "name": "Dream Weavers",
+      "description": "Ethereal entities that spin the fabric of dreams, capable of creating impossible architectures.",
+      "behavior": "reality_manipulation",
+      "threat_level": 2
+    },
+    "the_passenger": {
+      "name": "The Passenger",
+      "description": "A figure that rides permanently in your shadow, occasionally emerging when you look away.",
+      "behavior": "shadow_attachment",
+      "threat_level": 2
+    },
+    "sleep_paralysis_demon": {
+      "name": "Sleep Paralysis Demon",
+      "description": "A heavy presence that pins you down during the threshold between sleep and waking.",
+      "behavior": "paralysis_induction",
+      "threat_level": 4
+    },
+    "the_architect": {
+      "name": "The Architect",
+      "description": "A mysterious entity that builds and destroys rooms within dreams at will.",
+      "behavior": "spatial_manipulation",
+      "threat_level": 3
+    },
+    "nightmare_collector": {
+      "name": "Nightmare Collector",
+      "description": "A being that gathers and preserves the darkest nightmares in glass bottles.",
+      "behavior": "nightmare_harvesting",
+      "threat_level": 2
+    },
+    "lucid_guardian": {
+      "name": "Lucid Guardian",
+      "description": "A benevolent entity that appears to protect those who become aware they're dreaming.",
+      "behavior": "dream_protection",
+      "threat_level": 0
+    },
+    "the_dream_eater": {
+      "name": "The Dream Eater",
+      "description": "A void-like entity that consumes dreams, leaving behind only empty void spaces.",
+      "behavior": "dream_consumption",
+      "threat_level": 5
+    },
+    "reality_bleeder": {
+      "name": "Reality Bleeder",
+      "description": "An entity that causes reality to bleed into dreams, making the impossible seem mundane.",
+      "behavior": "reality_leakage",
+      "threat_level": 3
+    },
+    "the_sleeper": {
+      "name": "The Sleeper",
+      "description": "An ancient being that sleeps at the core of the dream world, its dreams creating entire realms.",
+      "behavior": "realm_creation",
+      "threat_level": 4
     }
   },
   "nightmare_entities": {
@@ -146,6 +206,60 @@
       {"name": "The Mickey Mouse", "speed": 0.4, "friendly": false, "theme": "Abandoned_amusement_park"},
       {"name": "The Donald Duck", "speed": 0.5, "friendly": false, "theme": "Abandoned_amusement_park"},
       {"name": "The Goofy", "speed": 0.6, "friendly": false, "theme": "Abandoned_amusement_park"}
+    ],
+    "hotel": [
+      {"name": "The Night Manager", "speed": 0.4, "friendly": false, "theme": "hotel"},
+      {"name": "Ghostly Bellhop", "speed": 0.3, "friendly": true, "theme": "hotel"},
+      {"name": "Room 666 Resident", "speed": 0.6, "friendly": false, "theme": "hotel"},
+      {"name": "The Housekeeper", "speed": 0.5, "friendly": false, "theme": "hotel"},
+      {"name": "Elevator Phantom", "speed": 0.7, "friendly": false, "theme": "hotel"},
+      {"name": "Corridor Shadow", "speed": 0.4, "friendly": false, "theme": "hotel"},
+      {"name": "The Doorman", "speed": 0.3, "friendly": false, "theme": "hotel"}
+    ],
+    "subway": [
+      {"name": "The Tunnel Dweller", "speed": 0.6, "friendly": false, "theme": "subway"},
+      {"name": "Ghost Commuter", "speed": 0.3, "friendly": true, "theme": "subway"},
+      {"name": "Platform Stalker", "speed": 0.5, "friendly": false, "theme": "subway"},
+      {"name": "The Last Train Conductor", "speed": 0.4, "friendly": false, "theme": "subway"},
+      {"name": "Subway Surfer", "speed": 0.7, "friendly": false, "theme": "subway"},
+      {"name": "Track Walker", "speed": 0.5, "friendly": false, "theme": "subway"},
+      {"name": "The Urchin", "speed": 0.4, "friendly": false, "theme": "subway"}
+    ],
+    "office": [
+      {"name": "The Overtime Worker", "speed": 0.4, "friendly": false, "theme": "office"},
+      {"name": "Paper Pusher", "speed": 0.3, "friendly": false, "theme": "office"},
+      {"name": "The Intern", "speed": 0.5, "friendly": true, "theme": "office"},
+      {"name": "Cubicle Phantom", "speed": 0.4, "friendly": false, "theme": "office"},
+      {"name": "Meeting Ghost", "speed": 0.2, "friendly": false, "theme": "office"},
+      {"name": "The Boss", "speed": 0.6, "friendly": false, "theme": "office"},
+      {"name": "Coffee Machine Spirit", "speed": 0.5, "friendly": false, "theme": "office"}
+    ],
+    "parking_garage": [
+      {"name": "The Watcher on Level B3", "speed": 0.4, "friendly": false, "theme": "parking_garage"},
+      {"name": "Abandoned Car Ghost", "speed": 0.3, "friendly": true, "theme": "parking_garage"},
+      {"name": "Security Guard", "speed": 0.5, "friendly": false, "theme": "parking_garage"},
+      {"name": "The Valet", "speed": 0.6, "friendly": false, "theme": "parking_garage"},
+      {"name": "Parking Lot Stalker", "speed": 0.5, "friendly": false, "theme": "parking_garage"},
+      {"name": "The Mechanic", "speed": 0.4, "friendly": false, "theme": "parking_garage"},
+      {"name": "Tire Squealer", "speed": 0.7, "friendly": false, "theme": "parking_garage"}
+    ],
+    "bedrooms": [
+      {"name": "The Closet Dweller", "speed": 0.3, "friendly": false, "theme": "bedrooms"},
+      {"name": "Under the Bed Entity", "speed": 0.4, "friendly": false, "theme": "bedrooms"},
+      {"name": "Mirror Reflection", "speed": 0.5, "friendly": false, "theme": "bedrooms"},
+      {"name": "The Nightstand Watcher", "speed": 0.2, "friendly": false, "theme": "bedrooms"},
+      {"name": "Ceiling Crawler", "speed": 0.6, "friendly": false, "theme": "bedrooms"},
+      {"name": "Bed Sheets Spirit", "speed": 0.4, "friendly": false, "theme": "bedrooms"},
+      {"name": "The Dream Intruder", "speed": 0.5, "friendly": false, "theme": "bedrooms"}
+    ],
+    "first_sunset": [
+      {"name": "Twilight Phantom", "speed": 0.4, "friendly": false, "theme": "first_sunset"},
+      {"name": "The Last Light", "speed": 0.3, "friendly": true, "theme": "first_sunset"},
+      {"name": "Sunset Shadow", "speed": 0.5, "friendly": false, "theme": "first_sunset"},
+      {"name": "Dusk Walker", "speed": 0.6, "friendly": false, "theme": "first_sunset"},
+      {"name": "The Color Thief", "speed": 0.4, "friendly": false, "theme": "first_sunset"},
+      {"name": "Horizon Ghost", "speed": 0.3, "friendly": false, "theme": "first_sunset"},
+      {"name": "The Fading Memory", "speed": 0.5, "friendly": false, "theme": "first_sunset"}
     ]
   }
 }

@@ -6,7 +6,7 @@
     "gas_station", "laundromat", "diner", "gym", "shopping_center", "train_station",
     "nursing_home", "daycare", "internet_cafe", "bowling_alley", "motel", "auto_shop",
     "cemetery", "greenhouse", "radio_station", "dental_office", "waiting_room",
-    "elevator_shaft", "stairwell"
+    "elevator_shaft", "stairwell", "bedrooms", "first_sunset"
   ],
   "theme_weights": {
     "early": [5, 1, 5, 1, 2, 1, 1],
@@ -19,7 +19,13 @@
     "school": "YELLOW",
     "home": "GREEN",
     "limbo": "MAGENTA",
-    "mall": "BLUE"
+    "mall": "BLUE",
+    "hotel": "RED",
+    "subway": "GRAY",
+    "office": "WHITE",
+    "parking_garage": "BLACK",
+    "bedrooms": "PURPLE",
+    "first_sunset": "ORANGE"
   },
   "rooms": {
     "hospital": {
@@ -313,7 +319,246 @@
         ["A toy clown with a distorted face", "It seems to be watching you..."],
         null
       ]
+    },
+    "hotel": {
+      "descriptions": [
+        ["A grand hotel lobby where the front desk stretches infinitely, keys hanging on hooks that never run out.", ["door1", "door2", "door3"]],
+        ["An endless hallway of identical doors, each room slightly different in temperature and lighting.", ["door1", "door2", "door3", "door4"]],
+        ["A penthouse suite where floor-to-ceiling windows show a city that doesn't exist on any map.", ["door1", "door2"]],
+        ["A basement kitchen that serves meals from memories, ingredients that taste of nostalgia.", ["door1", "door3"]],
+        ["A ballroom where phantom dances continue through the night, couples waltzing to music only they can hear.", ["door1", "door2", "door4"]],
+        ["A service elevator that stops at floors that shouldn't exist, revealing rooms from other hotels.", ["door1", "door3"]],
+        ["A hallway of mirrors where reflections arrive before you do, showing rooms you haven't entered yet.", ["door1", "door2"]],
+        ["A rooftop pool where the water reflects stars from different seasons, swimming in liquid time.", ["door1", "door4"]],
+        ["A hotel room where the wallpaper shifts patterns when you're not looking, revealing hidden messages.", ["door1", "door2"]],
+        ["A conference room where meetings from different eras overlap, voices from the past arguing with the future.", ["door1", "door3"]]
+      ],
+      "features": [
+        "A grand staircase spirals upward into darkness.",
+        "A service elevator hums in the corner, waiting.",
+        "A fire escape ladder leads to a roof that seems too far away.",
+        "The main elevator doors stand open, invitingly.",
+        "A back staircase winds down to the basement.",
+        "Emergency exits lead to walls that weren't there before."
+      ],
+      "paths": [
+        "The lobby extends in all directions.",
+        "Corridors branch into identical wings.",
+        "A single hallway lined with portraits that follow you.",
+        "Left leads to the dining room, right to the bar.",
+        "A narrow service passage leads to the kitchen.",
+        "A wide promenade connects the wings."
+      ],
+      "interactables": [
+        ["A brass key on the desk.", "It vibrates in your hand, leading you somewhere..."],
+        ["A leather-bound guest book.", "Your name is on every page, in different handwriting..."],
+        ["A room service tray with a covered dish.", "The smell is your favorite childhood meal..."],
+        ["An old telephone on the nightstand.", "It rings with your own voice calling for help..."],
+        ["A television that shows channels from other hotels.", "The weather forecast predicts your dreams..."],
+        ["A minibar with drinks that refill themselves.", "Each bottle is labeled with a memory you thought you'd forgotten..."],
+        ["A bedside lamp that flickers with bioluminescent patterns.", "The light traces shapes you recognize..."],
+        null
+      ]
+    },
+    "subway": {
+      "descriptions": [
+        ["A subway platform where trains arrive from nowhere and depart to nowhere, passengers fading in and out of existence.", ["door1", "door2"]],
+        ["An underground tunnel that stretches infinitely, tracks disappearing into absolute darkness.", ["door1", "door3"]],
+        ["A crowded subway car where all passengers have the same face, turned away from you.", ["door1", "door2"]],
+        ["A maintenance tunnel where cables pulse with bioluminescent light, leading to underground chambers.", ["door1", "door3"]],
+        ["A transfer station with platforms from different cities stacked on top of each other.", ["door1", "door2", "door4"]],
+        ["An abandoned station that still runs trains to destinations unknown, scheduled by an unseen hand.", ["door1", "door3"]],
+        ["A platform where the next train is always arriving but never truly arrives.", ["door1", "door2"]],
+        ["The space between cars where reality bends, doors opening to unexpected locations.", ["door1", "door2"]],
+        ["A control room overlooking tracks that shift positions when you're not watching.", ["door1", "door3"]],
+        ["A turnstile maze that leads to the same platform no matter which path you take.", ["door1", "door2"]]
+      ],
+      "features": [
+        "A staircase leading up to street level, always one more step than before.",
+        "An escalator that descends into increasingly strange terrain.",
+        "A maintenance ladder drops into darkness below.",
+        "Emergency exits lead to dead ends that whisper.",
+        "A hidden passage behind the vending machine.",
+        "Tracks that seem to lead underground rivers."
+      ],
+      "paths": [
+        "Platforms extend in all directions.",
+        "The tracks continue into darkness ahead.",
+        "Left tunnel leads to another station, right to nowhere.",
+        "A single platform with trains from different times.",
+        "A narrow passage to the maintenance tunnels.",
+        "A wide station hall with many exits."
+      ],
+      "interactables": [
+        ["A transit map that shows routes to impossible places.", "Your destination isn't on any line..."],
+        ["A metro card with your face on it.", "It was already used, but you don't remember traveling..."],
+        ["A subway token that feels warm.", "It leads to a platform that doesn't exist..."],
+        ["A poster for a train that left years ago.", "The departure time was your birthday..."],
+        ["A lost umbrella leans against a pole.", "Someone is waiting for it to rain..."],
+        ["A discarded newspaper with tomorrow's headlines.", "The news is about you..."],
+        ["A safety poster with eyes that follow you.", "The illustration warns of something specific..."],
+        null
+      ]
+    },
+    "office": {
+      "descriptions": [
+        ["A cubicle maze where walls rearrange themselves, forming new paths that lead to the same desk.", ["door1", "door2", "door3"]],
+        ["A conference room where meetings never end, the same conversation repeating through the glass walls.", ["door1", "door2"]],
+        ["An open-plan office where computers type by themselves, documents printing with information you'll need.", ["door1", "door3"]],
+        ["A break room where the coffee machine makes drinks from memories, refrigerator holds lunches from the future.", ["door1", "door2"]],
+        ["An elevator to floors that only exist during certain hours, accessible only to those who belong.", ["door1", "door3"]],
+        ["A server room where the hum creates visions, cables form patterns that almost spell answers.", ["door1", "door2"]],
+        ["A CEO's office where the window shows different cityscapes, desk drawers contain other people's secrets.", ["door1", "door2", "door4"]],
+        ["A filing cabinet that opens to infinite drawers, each folder containing lives you've never lived.", ["door1", "door3"]],
+        ["A bathroom where mirrors show you at different ages, faucets run with ink instead of water.", ["door1", "door2"]],
+        ["A storage closet filled with boxes from different decades, each containing artifacts from canceled projects.", ["door1", "door4"]]
+      ],
+      "features": [
+        "A main staircase leads to upper floors that don't match the building exterior.",
+        "An elevator that stops at floors that have been condemned.",
+        "A freight elevator hidden behind the water cooler.",
+        "Emergency stairs descend further than the building has stories.",
+        "A fire escape leads to a rooftop that shouldn't exist.",
+        "A back staircase spirals into increasingly strange architecture."
+      ],
+      "paths": [
+        "Cubicles extend in all directions.",
+        "The open plan creates a sea of desks.",
+        "Left corridor leads to executive offices, right to the break room.",
+        "A single hallway to the server room.",
+        "A narrow passage to the supply closet.",
+        "A wide atrium connects all departments."
+      ],
+      "interactables": [
+        ["A stapler that won't stop dispensing staples.", "It fills your desk with an endless supply..."],
+        ["A company mug with your name on it.", "You don't remember receiving it..."],
+        ["A computer that logs your thoughts before you type.", "The password is something you haven't thought of yet..."],
+        ["A whiteboard with equations that solve themselves.", "The solution is your deepest desire..."],
+        ["A nameplate for a position you don't recognize.", "It's written in a language you somehow understand..."],
+        ["A motivational poster with eyes that move.", "The cat is watching you specifically..."],
+        ["A plant that thrives without light.", "It's growing toward something in the corner..."],
+        null
+      ]
+    },
+    "parking_garage": {
+      "descriptions": [
+        ["A multi-level parking structure where cars disappear between floors, their headlights leaving trails in the air.", ["door1", "door2", "door3"]],
+        ["A dark basement level where your car is always parked three rows away, no matter how many times you walk.", ["door1", "door2"]],
+        ["An underground level that extends beyond the building's footprint, leading to chambers of abandoned vehicles.", ["door1", "door3"]],
+        ["A rooftop parking lot where the city skyline shifts, buildings rearranging in the twilight.", ["door1", "door4"]],
+        ["A valet station where keys hang on hooks that multiply, each leading to a different vehicle.", ["door1", "door2"]],
+        ["A security booth where monitors show empty spaces, cameras pointed at places that don't exist.", ["door1", "door3"]],
+        ["An elevator to levels that sink deeper underground, air growing thick with exhaust from nowhere.", ["door1", "door2"]],
+        ["A car wash where vehicles emerge transformed, different makes and models than when they entered.", ["door1", "door4"]],
+        ["A mechanic's bay where cars are being worked on by figures you can't quite see.", ["door1", "door2"]],
+        ["A parking space marked 'Reserved' with your name, but the vehicle that belongs there is missing.", ["door1", "door3"]]
+      ],
+      "features": [
+        "A stairwell that descends to floors below the basement.",
+        "An elevator that opens to different levels each time.",
+        "Ramps that spiral endlessly, returning you to the same level.",
+        "Emergency exits blocked by walls that weren't there yesterday.",
+        "A pedestrian walkway to a building that doesn't connect.",
+        "A service elevator to maintenance tunnels below."
+      ],
+      "paths": [
+        "Concrete pillars extend in all directions.",
+        "The drive aisles form a labyrinth.",
+        "Left leads to the stairwell, right to the elevator.",
+        "A single lane to the far corner.",
+        "A narrow vehicle path between rows.",
+        "A wide turning area with many directions."
+      ],
+      "interactables": [
+        ["A parking ticket that extends infinitely.", "The fine keeps growing as you watch..."],
+        ["A set of car keys on the ground.", "They start a vehicle you don't own..."],
+        ["A dashboard camera with footage of your future.", "You watch yourself make a decision..."],
+        ["A garage door opener that opens to walls.", "Behind it is a space that shouldn't exist..."],
+        ["A broken meter that always shows expired.", "Time has run out for something..."],
+        ["A tow notice on your windshield.", "Your car has been taken to a lot that doesn't exist..."],
+        ["A gasoline smell that comes from nowhere.", "Something is burning that shouldn't be..."],
+        null
+      ]
+    },
+    "bedrooms": {
+      "descriptions": [
+        ["A childhood bedroom where toys move when you're not watching, toys you thought were thrown away.", ["door1", "door2"]],
+        ["A master bedroom where the bed faces a mirror showing a room that isn't yours.", ["door1", "door3"]],
+        ["A teenager's room where posters change positions, band members watching you with different expressions.", ["door1", "door2", "door4"]],
+        ["A guest room that's always prepared for visitors who never arrive, but leave evidence of their stay.", ["door1", "door2"]],
+        ["A nursery where the mobile spins counterclockwise, crib moving itself to different positions.", ["door1", "door4"]],
+        ["A walk-in closet that extends beyond the walls, clothes from different lives hanging in the dark.", ["door1", "door2", "door3"]],
+        ["A bedroom where the ceiling transforms into a sky that shows stars from your birth date.", ["door1", "door2"]],
+        ["An attic bedroom where dormer windows show scenes from other houses, other families.", ["door1", "door3"]],
+        ["A basement bedroom where the walls breathe, pipes creating rhythms like a heartbeat.", ["door1", "door2"]],
+        ["A shared bedroom where your roommate's side has items you don't remember buying.", ["door1", "door4"]]
+      ],
+      "features": [
+        "A door to the hallway that opens to different rooms.",
+        "A window that shows different weather than outside.",
+        "A closet door that won't stay closed.",
+        "An en-suite bathroom that echoes with unseen footsteps.",
+        "A balcony overlooking a garden that changes each night.",
+        "A trapdoor in the ceiling leading to the attic."
+      ],
+      "paths": [
+        "The bedroom extends in comfortable dimensions.",
+        "The door leads to a hallway that keeps growing.",
+        "Left goes to the bathroom, right to the closet.",
+        "A single doorway to the rest of the house.",
+        "A narrow passage to a hidden nook.",
+        "A wide entrance to an unfamiliar room."
+      ],
+      "interactables": [
+        ["A diary on the nightstand.", "Today's entry describes tonight..."],
+        ["A photo frame that shows different pictures.", "Your face ages and deages in the glass..."],
+        ["An alarm clock that rings at the wrong times.", "It's trying to wake you from something..."],
+        ["A lamp that flickers with memories.", "The light shows scenes from your past..."],
+        ["A toy on the floor that points toward the closet.", "Something is hiding in there..."],
+        ["A pillow that feels like someone is resting on it.", "The impression of a head remains..."],
+        ["A window that won't close properly.", "Something is slipping through the gap..."],
+        null
+      ]
+    },
+    "first_sunset": {
+      "descriptions": [
+        ["A world where the sun is setting for the first time, colors bleeding into an unfamiliar sky.", ["door1", "door2"]],
+        ["A horizon where day and night meet in battle, light and darkness creating impossible shapes.", ["door1", "door3"]],
+        ["A twilight zone where familiar objects cast strange shadows, growing and shrinking with the dying light.", ["door1", "door2", "door4"]],
+        ["A landscape painted in colors you've never seen, gradients that don't exist in waking life.", ["door1", "door2"]],
+        ["A moment frozen between epochs, the sun perpetually sinking but never setting.", ["door1", "door4"]],
+        ["A reflection of reality where everything glows with the warmth of the last light.", ["door1", "door2", "door3"]],
+        ["A world seen through new eyes, everything touched by the magic of first experience.", ["door1", "door3"]],
+        ["A time when shadows first learned to dance, moving with a grace they'll never regain.", ["door1", "door2"]],
+        ["An ending that feels like a beginning, the death of day birthing the night.", ["door1", "door4"]],
+        ["A memory of light before darkness learned to last, the last golden moment.", ["door1", "door2"]]
+      ],
+      "features": [
+        "A path of golden light stretching to the horizon.",
+        "The shadows grow longer, pointing somewhere specific.",
+        "A window that frames the perfect sunset.",
+        "A doorway that opens to the dying light.",
+        "A mirror that reflects only the evening.",
+        "A clock that stops at the magical hour."
+      ],
+      "paths": [
+        "The world extends in amber and rose.",
+        "The path leads toward the horizon.",
+        "Left goes into lengthening shadows, right into fading light.",
+        "A single road continues into the dusk.",
+        "A narrow trail through the purple distance.",
+        "A wide avenue of golden light."
+      ],
+      "interactables": [
+        ["A pair of sunglasses with sunset-colored lenses.", "Looking through them reveals hidden messages..."],
+        ["A camera that only captures this moment.", "The photo shows something different each time..."],
+        ["A painting of this exact sunset.", "It wasn't painted yet, but here it is..."],
+        ["A flower that's wilting in fast-forward.", "It's experiencing a lifetime in moments..."],
+        ["A message in the clouds.", "It reads your name in languages of light..."],
+        ["A sun dial that shows the wrong time.", "It's set to the hour of your birth..."],
+        ["A shadow that doesn't match your shape.", "It belongs to someone you haven't met yet..."],
+        null
+      ]
     }
   }
 }
-
