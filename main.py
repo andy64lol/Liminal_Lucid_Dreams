@@ -8,6 +8,15 @@ import utilities.colours as colours
 import utilities.save_load as save_load
 import utilities.styling as styling
 import utilities.data_loader as data_loader
+import utilities.entities as entities
+from utilities.entities import (
+    LiminalEntity, 
+    Anomaly, 
+    MemoryFragment, 
+    DimensionalRift, 
+    EchoEvent, 
+    PhantomInteraction
+)
 
 # Game settings from data files
 world_bounds = data_loader.get_world_bounds()
@@ -49,52 +58,10 @@ directions = {
 
 doors = ['door1', 'door2', 'door3', 'door4']
 
-# Entity classes for encounters
-class Entity:
-    def __init__(self, name, description, behavior, threat_level=1):
-        self.name = name
-        self.description = description
-        self.behavior = behavior
-        self.threat_level = threat_level
-        self.active = True
-
-class Anomaly:
-    def __init__(self, name, description, effect):
-        self.name = name
-        self.description = description
-        self.effect = effect
-
-class MemoryFragment:
-    def __init__(self, content, emotional_weight, clarity=1.0):
-        self.content = content
-        self.emotional_weight = emotional_weight  # 1-10 scale
-        self.clarity = clarity  # 0.0-1.0, how clear the memory is
-        self.triggered = False
-        
-class DimensionalRift:
-    def __init__(self, destination_type, stability=0.5):
-        self.destination_type = destination_type
-        self.stability = stability
-        self.uses_remaining = random.randint(1, 3)
-        
-class EchoEvent:
-    def __init__(self, event_type, intensity, duration=1):
-        self.event_type = event_type
-        self.intensity = intensity  # 1-5 scale
-        self.duration = duration
-        self.active_turns = 0
-        
-class PhantomInteraction:
-    def __init__(self, interaction_type, entity_name, success_chance=0.7):
-        self.interaction_type = interaction_type
-        self.entity_name = entity_name
-        self.success_chance = success_chance
-        self.completed = False
-
 # Define liminal entities from data file
 liminal_entities_data = data_loader.get_liminal_entities()
 ENTITIES = {
-    key: Entity(
+    key: LiminalEntity(
         data['name'],
         data['description'],
         data['behavior'],
