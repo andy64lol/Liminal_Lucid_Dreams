@@ -34,8 +34,8 @@ def box_text(text, width=60, border_color=colours.WHITE, text_color=colours.RESE
             line = line[width - 4:]
         wrapped_lines.append(line)
     
-    border = border_color + '┌' + '─' * (width - 2) + '┐' + colours.RESET_ALL
-    bottom = border_color + '└' + '─' * (width - 2) + '┘' + colours.RESET_ALL
+    border = border_color + '┌' + '─' * (width - 1) + '┐' + colours.RESET_ALL
+    bottom = border_color + '└' + '─' * (width - 1) + '┘' + colours.RESET_ALL
     
     result = [border]
     for line in wrapped_lines:

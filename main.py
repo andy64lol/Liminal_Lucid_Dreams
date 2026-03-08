@@ -1131,12 +1131,12 @@ Psychological State: {self.player.psychological_state}"""
             print(colours.RED + "\nNo active player." + colours.RESET_ALL)
             return
 
-        # Handle directions with slash prefix for consistency
-        if direction.startswith('/'):
-            direction = direction[1:]
+        # Normalize direction - add slash prefix if not present for lookup
+        if not direction.startswith('/'):
+            direction = '/' + direction
 
         if direction not in directions:
-            print(colours.RED + f"Invalid direction. Use: {', '.join(directions.keys())}" + colours.RESET_ALL)
+            print(colours.RED + f"Invalid direction. Use: {', '.join([d.replace('/', '') for d in directions.keys()])}" + colours.RESET_ALL)
             return
 
         # Make sure current_room is set
