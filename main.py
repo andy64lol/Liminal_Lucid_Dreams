@@ -525,14 +525,25 @@ class Game:
         self.clear_screen()
         styling.print_header(None)
 
-        print("\nSelect Option:")
-        print(colours.RED + "1. Nightmare Mode" + colours.RESET_ALL + " - 34 entities, one life, infinite levels")
-        print(colours.YELLOW + "2. Normal Mode" + colours.RESET_ALL)
-        print(colours.CYAN + "3. Load Game" + colours.RESET_ALL)
-        print(colours.WHITE + "0. Quit Game" + colours.RESET_ALL)
+        menu_text = """
+Select Option:
+
+» 1 «  Nightmare Mode
+    └─ 34 entities, one life, infinite levels
+    
+» 2 «  Normal Mode
+    └─ Standard gameplay with entities
+    
+» 3 «  Load Game
+    └─ Continue from a saved game
+    
+» 0 «  Quit Game
+    └─ Exit to desktop"""
+
+        print(styling.box_text(menu_text.strip(), 55, colours.MAGENTA, colours.WHITE))
 
         try:
-            choice = input("\nEnter your choice (0-3): ").strip()
+            choice = input(f"\n{colours.CYAN}▶ Enter your choice (0-3):{colours.RESET_ALL} ").strip()
 
             if choice == "0":
                 print(colours.YELLOW + "\nThank you for playing Liminal: Lucid Dreams. Goodbye!" + colours.RESET_ALL)
@@ -540,22 +551,35 @@ class Game:
                 os.system('cls' if os.name == 'nt' else 'clear')
                 sys.exit(0)
             elif choice == "1":
+                os.system('cls' if os.name == 'nt' else 'clear')
                 self.game_mode = "nightmare"
-                print(colours.RED + f"\nCurrent High Score: {self.high_score} levels" + colours.RESET_ALL)
+                print(colours.RED + f"\n╔════════════════════════════════════╗")
+                print(f"║  Current High Score: {self.high_score:>10} levels  ║")
+                print("╚════════════════════════════════════╝" + colours.RESET_ALL)
             elif choice == "3":
                 if self.show_load_menu():
                     return
+                os.system('cls' if os.name == 'nt' else 'clear')
                 self.show_menu()
                 return
             elif choice == "2":
-                print("\nSelect Normal Mode Type:")
-                print(colours.CYAN + "1. Coma Mode" + colours.RESET_ALL + " - Standard game")
-                print(colours.GREEN + "2. Dreaming Mode" + colours.RESET_ALL + " - No entities, special ending")
+                os.system('cls' if os.name == 'nt' else 'clear')
+                submenu_text = """
+Select Normal Mode Type:
+
+» 1 «  Coma Mode
+    └─ Standard game
+    
+» 2 «  Dreaming Mode
+    └─ No entities, special ending"""
+                print(styling.box_text(submenu_text.strip(), 45, colours.YELLOW, colours.WHITE))
                 try:
                     sub_choice = input("\nEnter your choice (1-2): ").strip()
                     if sub_choice == "1":
+                        os.system('cls' if os.name == 'nt' else 'clear')
                         self.game_mode = "coma"
                     elif sub_choice == "2":
+                        os.system('cls' if os.name == 'nt' else 'clear')
                         self.game_mode = "dreaming" 
                     else:
                         print(colours.YELLOW + "\nInvalid choice. Defaulting to Coma Mode." + colours.RESET_ALL)
@@ -1013,42 +1037,81 @@ class Game:
                         print(f" - {direction}: Unknown area")
 
     def show_help(self):
-        print(colours.CYAN + "\n=== COMMANDS ===" + colours.RESET_ALL)
-        print("movement: /right, /left, /forward, /backward, /upstairs, /downstairs")
-        print("alternate movement: /move [direction]")
-        print("interact: /examine, /use [item], /take")
-        print("inventory: /inventory or /i")
-        print("stats: /stats")
-        print("save game: /save [slot]")
-        print("load game: /load [slot]")
-        print("exit: /exit or /quit")
-        print("help: /help")
+        help_text = """
+MOVEMENT
+  /right, /left, /forward, /backward
+  /upstairs, /downstairs
+  /move [direction]
+
+INTERACTION
+  /examine    - Look around the room
+  /use [item] - Use an item from inventory
+  /take       - Pick up items
+
+INFORMATION
+  /inventory /i - View your items
+  /stats         - View your status
+
+SAVE/LOAD
+  /save [slot] - Save game (1-5)
+  /load [slot] - Load game (1-5)
+
+OTHER
+  /exit /quit - Leave the game
+  /help        - Show this message"""
+        
+        print(styling.decorated_title("COMMANDS", 40, colours.CYAN))
+        print(styling.box_text(help_text.strip(), 45, colours.CYAN, colours.WHITE))
 
     def show_stats(self):
         if self.player is None:
             print(colours.RED + "\nNo active player." + colours.RESET_ALL)
             return
 
-        print(colours.CYAN + "\n=== STATS ===" + colours.RESET_ALL)
-        print(f"Name: {self.player.name}")
-        print(f"Level: {self.player.level}")
-
-        # Display sanity with color coding
+        # Determine colors based on values
         sanity_color = colours.GREEN
         if self.player.sanity < 30:
             sanity_color = colours.RED
         elif self.player.sanity < 70:
             sanity_color = colours.YELLOW
-        print(f"Sanity: {sanity_color}{self.player.sanity}{colours.RESET_ALL}")
+            
+        reality_color = colours.CYAN
+        if self.player.reality_coherence < 30:
+            reality_color = colours.RED
+        elif self.player.reality_coherence < 70:
+            reality_color = colours.YELLOW
+            
+        memory_color = colours.LIGHTBLUE_EX
+        if self.player.memory_stability < 30:
+            memory_color = colours.RED
+        elif self.player.memory_stability < 70:
+            memory_color = colours.YELLOW
+        
+        # Create progress bars
+        sanity_bar = styling.progress_bar(self.player.sanity, 100, 20, sanity_color)
+        reality_bar = styling.progress_bar(self.player.reality_coherence, 100, 20, reality_color)
+        memory_bar = styling.progress_bar(self.player.memory_stability, 100, 20, memory_color)
+        
+        stats_text = f"""
+Name:    {self.player.name}
+Level:   {self.player.level}
+Position: ({self.player.x}, {self.player.y}, {self.player.z})
 
-        print(f"Position: ({self.player.x}, {self.player.y}, {self.player.z})")
+{sanity_color}SANITY:{colours.RESET_ALL}   {self.player.sanity:3d}/100 {sanity_bar}
+{reality_color}REALITY:{colours.RESET_ALL} {self.player.reality_coherence:3d}/100 {reality_bar}
+{memory_color}MEMORY:{colours.RESET_ALL}   {self.player.memory_stability:3d}/100 {memory_bar}
 
+Psychological State: {self.player.psychological_state}"""
+        
         if self.game_mode == "nightmare":
-            print(colours.RED + "Game Mode: Nightmare" + colours.RESET_ALL)
+            stats_text += f"\n{colours.RED}Game Mode: Nightmare{colours.RESET_ALL}"
         elif self.game_mode == "coma":
-            print(colours.YELLOW + "Game Mode: Coma" + colours.RESET_ALL)
+            stats_text += f"\n{colours.YELLOW}Game Mode: Coma{colours.RESET_ALL}"
         else:
-            print(colours.GREEN + "Game Mode: Dreaming" + colours.RESET_ALL)
+            stats_text += f"\n{colours.GREEN}Game Mode: Dreaming{colours.RESET_ALL}"
+        
+        print(styling.decorated_title("PLAYER STATS", 45, colours.CYAN))
+        print(styling.box_text(stats_text.strip(), 50, colours.CYAN, colours.WHITE))
 
     def show_inventory(self):
         if self.player is None:
@@ -1495,13 +1558,17 @@ class Game:
 
             try:
                 command = input("\n> ").strip().lower()
+                os.system('cls' if os.name == 'nt' else 'clear')  # Clear screen after each command
                 self.process_command(command)
             except EOFError:
                 print(colours.RED + "\nInput error occurred. Exiting game." + colours.RESET_ALL)
+                time.sleep(1)
+                os.system('cls' if os.name == 'nt' else 'clear')
                 self.running = False
                 break
             except KeyboardInterrupt:
                 print(colours.YELLOW + "\nGame interrupted. Goodbye!" + colours.RESET_ALL)
+                os.system('cls' if os.name == 'nt' else 'clear')
                 self.running = False
                 break
 
